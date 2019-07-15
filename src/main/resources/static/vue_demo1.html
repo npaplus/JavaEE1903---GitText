@@ -8,7 +8,8 @@
 <body>
 <div id="app">
     {{message}}
-    <button v-on:click="fun1('Vue v-on')">onclick</button>
+<!--	v-on简写：@-->
+    <button @click="fun1('Vue v-on')">onclick</button>
 
 </div>
 </body>
@@ -20,7 +21,6 @@
         },
         methods:{
             fun1:function(msg){
-
                 this.message = msg;
             }
 
